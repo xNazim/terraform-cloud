@@ -46,6 +46,13 @@ resource "azurerm_virtual_network" "vnet" {
   address_space       = ["192.168.0.0/16"]
 }
 
+resource "azurerm_virtual_network" "vnet" {
+  name                = "nazim-vnet"
+  resource_group_name = azurerm_resource_group.rg.name
+  location            = azurerm_resource_group.rg.location
+  address_space       = ["10.0.0.0/16"]
+}
+
 
 
 resource "azurerm_subnet" "subnets" {
