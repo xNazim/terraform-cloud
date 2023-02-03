@@ -46,7 +46,7 @@ resource "azurerm_virtual_network" "vnet" {
   address_space       = ["192.168.0.0/16"]
 }
 
-resource "azurerm_virtual_network" "vnet" {
+resource "azurerm_virtual_network" "vnet1" {
   name                = "nazim-vnet"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
